@@ -14,7 +14,7 @@ AgroVision, tarla fotoğraflarından anlık karar desteği üreten bir web uygul
 
 | Özellik | Açıklama |
 |---|---|
-| Görüntü Analizi | JPG/PNG yükleyerek 3 farklı AI modeliyle eş zamanlı analiz |
+| Görüntü Analizi | Tek bir Unified CNN modeliyle hastalık, yabani ot ve hasat tespiti eş zamanlı yapılır |
 | Gemini AI Yorumu | Modelin tespit ettiği sonucu yorumlayıp Türkçe tedavi önerisi sunar |
 | Harita Entegrasyonu | Leaflet.js ile tarla konumu seçimi ve etiketleme |
 | PDF Raporu | Analiz sonuçlarının tek tıkla indirilebilir raporu |
