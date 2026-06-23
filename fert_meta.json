@@ -1,0 +1,42 @@
+{
+  "soil_types": [
+    "Black",
+    "Clayey",
+    "Loamy",
+    "Red",
+    "Sandy"
+  ],
+  "crop_types": [
+    "Barley",
+    "Cotton",
+    "Ground Nuts",
+    "Maize",
+    "Millets",
+    "Oil seeds",
+    "Paddy",
+    "Pulses",
+    "Sugarcane",
+    "Tobacco",
+    "Wheat"
+  ],
+  "fertilizers": [
+    "10-26-26",
+    "14-35-14",
+    "17-17-17",
+    "20-20",
+    "28-28",
+    "DAP",
+    "Urea"
+  ],
+  "feature_cols": [
+    "Temparature",
+    "Humidity",
+    "Moisture",
+    "Soil Type",
+    "Crop Type",
+    "Nitrogen",
+    "Potassium",
+    "Phosphorous"
+  ],
+  "accuracy": 95.0
+}

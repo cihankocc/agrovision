@@ -1,0 +1,94 @@
+/* ResultCard.module.css */
+
+.card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.06);
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: cardIn 0.5s ease forwards;
+}
+@keyframes cardIn { to { opacity:1; transform:translateY(0); } }
+
+/* ── Header ── */
+.header {
+  padding: 16px 18px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #f1f5f1;
+}
+.icon {
+  width: 36px; height: 36px;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; flex-shrink: 0;
+}
+.title { font-size: 0.88rem; font-weight: 700; color: #2d4a2d; flex: 1; }
+
+/* Badges */
+.badge { font-size: 0.68rem; font-weight: 700; padding: 3px 9px; border-radius: 20px; white-space: nowrap; }
+.badgeHigh { background: #dcfce7; color: #15803d; }
+.badgeMid  { background: #fef9c3; color: #a16207; }
+.badgeLow  { background: #fee2e2; color: #dc2626; }
+
+/* ── Body ── */
+.body { padding: 18px; }
+
+.predLabel { font-size: 1.35rem; font-weight: 800; color: #1a3a1a; margin-bottom: 4px; line-height: 1.2; }
+.predConf  { font-size: 0.85rem; color: #6b8f6b; font-weight: 500; margin-bottom: 14px; }
+
+.confRow {
+  display: flex; justify-content: space-between;
+  font-size: 0.73rem; font-weight: 600; color: #8aaa8a;
+  margin-bottom: 6px;
+}
+.barTrack { height: 8px; background: #e9f5e9; border-radius: 99px; overflow: hidden; margin-bottom: 14px; }
+.barFill  { height: 100%; border-radius: 99px; width: 0%; transition: width 0.65s ease-out; }
+.barGreen { background: #4ade80; }
+.barAmber { background: #fbbf24; }
+.barRed   { background: #f87171; }
+
+/* ── Expand button ── */
+.expandBtn {
+  width: 100%; background: none; border: none;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 8px 0 0; font-size: 0.75rem; font-weight: 600;
+  color: #6b8f6b; cursor: pointer; transition: color .2s;
+  font-family: 'Inter', sans-serif;
+}
+.expandBtn:hover { color: #1a5c1a; }
+.chevron { transition: transform .25s; display: inline-block; font-size: 0.85rem; }
+.chevronOpen { transform: rotate(180deg); }
+
+/* ── Prob list ── */
+.probList { margin-top: 12px; animation: slideDown 0.2s ease; }
+@keyframes slideDown { from { opacity:0; transform:translateY(-6px); } to { opacity:1; transform:translateY(0); } }
+
+.probRow {
+  display: flex; align-items: center; gap: 8px;
+  margin-bottom: 7px; font-size: 0.75rem;
+}
+.probName { flex: 0 0 110px; color: #4a6a4a; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.miniTrack { flex: 1; height: 5px; background: #e9f5e9; border-radius: 99px; overflow: hidden; }
+.miniFill  { height: 100%; border-radius: 99px; background: #4ade80; }
+.probPct   { flex: 0 0 46px; text-align: right; color: #6b8f6b; font-weight: 600; }
+
+/* ── Treatment Box ── */
+.treatmentBox {
+  margin-top: 14px;
+  padding: 12px;
+  background-color: #f0fdf4;
+  border-left: 3px solid #22c55e;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: #166534;
+  line-height: 1.4;
+}
+.treatmentTitle {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 4px;
+}

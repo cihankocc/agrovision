@@ -1,0 +1,64 @@
+# ── Secrets & Environment ────────────────────────────────────────────────────
+.env
+*.env
+!.env.example
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+*.whl
+venv/
+.venv/
+ENV/
+env/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+*.coveragexml
+coverage.xml
+
+# ── Model weights (large binary files — store in GCS / DVC) ──────────────────
+*.pth
+*.pt
+*.pkl
+*.h5
+*.hdf5
+*.onnx
+# Uncomment next line only if you WANT to track small pkl files:
+# !fert_*.pkl
+# !fert_meta.json
+
+# ── Node / Frontend ───────────────────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── OS & IDE ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.suo
+*.sln
+*.sw?
+
+# ── Data / Datasets ───────────────────────────────────────────────────────────
+datasets/
+*.csv

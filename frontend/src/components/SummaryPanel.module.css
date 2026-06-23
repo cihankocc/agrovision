@@ -1,0 +1,107 @@
+/* SummaryPanel.module.css */
+
+.card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.06);
+  padding: 24px 28px;
+  margin-bottom: 22px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: cardIn 0.5s ease 450ms forwards;
+}
+@keyframes cardIn { to { opacity:1; transform:translateY(0); } }
+
+.heading {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #1a3a1a;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f1f5f1;
+}
+.row:last-of-type { border-bottom: none; padding-bottom: 0; }
+
+.rowIcon  { font-size: 1.3rem; width: 32px; text-align: center; }
+.rowLabel { flex: 1; font-size: 0.85rem; font-weight: 600; color: #3d5a3d; }
+.rowValue { font-size: 0.88rem; font-weight: 700; color: #1a3a1a; }
+.rowConf  { font-size: 0.75rem; color: #8aaa8a; margin-left: 6px; }
+
+/* Alt Butonlar */
+.actions {
+  margin-top: 22px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Reset button */
+.btnAgain {
+  flex: 1;
+  min-width: 160px;
+  background: #f0fdf4;
+  color: #1a5c1a;
+  border: 2px solid #4ade80;
+  border-radius: 12px;
+  padding: 11px 16px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
+}
+.btnAgain:hover { background: #dcfce7; border-color: #22c55e; }
+
+
+/* ── Akıllı Özet Mesajı Kutusu ── */
+.summaryBox {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border: 2px solid #4ade80;
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #14532d;
+  line-height: 1.55;
+  box-shadow: 0 2px 10px rgba(74,222,128,0.15);
+  animation: summaryIn 0.4s ease;
+}
+@keyframes summaryIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ── Konum Satırı ── */
+.locationRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f0faf0;
+  border: 1px solid #a5c4a5;
+  border-radius: 10px;
+  padding: 9px 14px;
+  font-size: 0.84rem;
+  color: #2d7a2d;
+  margin-bottom: 14px;
+  animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
