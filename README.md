@@ -15,7 +15,7 @@ AgroVision, tarla fotoğraflarından anlık karar desteği üreten bir web uygul
 | Özellik | Açıklama |
 |---|---|
 | Görüntü Analizi | JPG/PNG yükleyerek 3 farklı AI modeliyle eş zamanlı analiz |
-| Gemini AI Yorumu | Google Gemini API üzerinden detaylı hastalık ve tedavi açıklaması |
+| Gemini AI Yorumu | Modelin tespit ettiği sonucu yorumlayıp Türkçe tedavi önerisi sunar |
 | Harita Entegrasyonu | Leaflet.js ile tarla konumu seçimi ve etiketleme |
 | PDF Raporu | Analiz sonuçlarının tek tıkla indirilebilir raporu |
 | Gübre Tavsiyesi | Toprak değerlerine göre Random Forest tabanlı gübre önerisi |
